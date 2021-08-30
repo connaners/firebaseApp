@@ -5,14 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
 
-    <Button
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_baseline_menu_24" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="logout"
-        android:id="@+id/mainLogout"/>
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:text="HEllo WORLD"/>
+
+    <Button
+        android:id="@+id/mainLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
 
 </LinearLayout>

@@ -8,23 +8,24 @@
     android:gravity="center"
     tools:context=".SplashScreenActivity">
 
-
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="251dp"
-        android:layout_height="279dp"
-
+        android:id="@+id/splashLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/splashvirus" />
 
     <TextView
+        android:id="@+id/titleTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AUTH TEST APP"
-        android:textSize="24sp"/>
-
+        android:text="SEcurity ETTS APP"
+        android:layout_marginTop="255dp"
+        android:textSize="36sp"/>
     <TextView
+        android:id="@+id/author"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="rohmnsa"
-        android:textSize="24sp"/>
+        android:textSize="14sp"
+        android:text="rohmnsa"/>
+
 </LinearLayout>

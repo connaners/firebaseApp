@@ -20,13 +20,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="password"
+        android:inputType="textPassword"
         android:id="@+id/etRegPass"
         android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="confirm password"
+        android:inputType="textPassword"
+        android:id="@+id/etConfirmPass"
+        android:layout_margin="10dp"/>
+
+    <CheckBox
+        android:id="@+id/regisCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="show password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/btRegLogin"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="register"
         android:id="@+id/btRegReg"/>
+
+    <ProgressBar
+        android:id="@+id/regProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
 
 </LinearLayout>
